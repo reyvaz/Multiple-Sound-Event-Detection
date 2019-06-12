@@ -14545,15 +14545,7 @@ insertion rate     0.06
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>This project built and tested a model for the detection of two classes of sound events that may alert about the presence of an emergency. For this purpose, an artificial dataset with audio mixes, containing occurrences of glassbreaks and gunshots, was created using source recordings from Tampere's DCASE community. The dataset consists of audio clips that contain 0 to 4 mixed event occurrences.</p>
 <p>The model presented is a deep learning network with one temporal convolution, an LSTM layer, a GRU layer, and one time distributed dense layer as output. All but the output layers perform batch normalization, and dropout with rate of 0.5.</p>
-<p>The network is able to detect the occurrence of a sound event, it's class, and its onset with performance metrics:</p>
-<ul>
-<li>F1-score of 0.94</li>
-<li>event-based error rate of 0.10</li>
-<li>substitution rate  0.01</li>
-<li>deletion rate      0.06</li>
-<li>insertion rate     0.03</li>
-</ul>
-<p>In other words: it correctly detects 94 percent of event occurrences and their onset, missing 6 percent, miscategorizing 1 percent, and falsely detecting an event at a 3 percent rate.</p>
+<p>The network correctly detects 93 percent of event occurrences and their onset, missing 6 percent, miscategorizing 1 percent, and falsely detecting an event at a 3 percent rate.</p>
 
 </div>
 </div>
